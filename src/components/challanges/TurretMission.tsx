@@ -41,7 +41,7 @@ const MalwareRemovalMission: React.FC = () => {
 
     return (
         <MissionTemplate
-            audioUrl={'/src/assets/4turret.mp3'}
+            audioUrl={'4turret.mp3'}
             missionContent={missionContent}
             challengeComponent={<TurretDefenceGame maxAliens={11} onWin={() => {
                 return navigate('/win-game')

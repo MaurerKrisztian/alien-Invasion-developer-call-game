@@ -20,21 +20,16 @@ const Navigation = () => (
     </nav>
 );
 
-const Home = () => (
-    <div className="p-4">
-        <h1 className="text-2xl font-bold mb-4">Welcome to Alien Invasion: Developer's Call</h1>
-        <Link to="/start" className="text-white hover:text-gray-300">Start Game</Link>
-    </div>
-);
+
 
 const App: React.FC = () => {
     return (
         <Router>
             <div className="min-h-screen bg-gray-100">
-                <Navigation />
+                {/*<Navigation />*/}
                 <div className="container mx-auto p-4">
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/" element={<VimSnakeMission />} />
                         <Route path="/start" element={<VimSnakeMission />} />
                         <Route path="/regexp-mission" element={<RegexpMission />} />
                         <Route path="/malware-mission" element={<MalwareRemovalMission />} />

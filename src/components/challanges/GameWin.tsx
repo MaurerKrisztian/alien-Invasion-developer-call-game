@@ -43,7 +43,7 @@ const GameWin: React.FC = () => {
     return (
         <MissionTemplate
             missionContent={missionContent}
-            audioUrl={'/src/assets/5win.mp3'}
+            audioUrl={'5win.mp3'}
         />
     );
 };

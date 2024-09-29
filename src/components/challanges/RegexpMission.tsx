@@ -45,7 +45,7 @@ const ExampleMission: React.FC = () => {
 
     return (
         <MissionTemplate
-            audioUrl="/src/assets/2regexp.mp3"
+            audioUrl="2regexp.mp3"
             missionContent={missionContent}
             challengeComponent={<RegexGame onWin={() => {
                 return navigate('/malware-mission')
