@@ -21,6 +21,7 @@ let food = {
     x: Math.floor(Math.random() * 15 + 1) * box,
     y: Math.floor(Math.random() * 15 + 1) * box
 };
+// @ts-ignore
 let jogo: NodeJS.Timeout;
 
 const SnakeGame: React.FC<SnakeGameProps> = ({ winningScore, onWin }) => {

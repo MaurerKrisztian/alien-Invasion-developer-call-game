@@ -22,7 +22,6 @@ const ExampleMission: React.FC = () => {
             audioUrl="/src/assets/startstory.mp3"
             missionContent={missionContent}
             challengeComponent={<SnakeGame winningScore={3} onWin={()=>{return navigate('/')}}/>}
-            nextPage="/next-challenge"
         />
     );
 };
