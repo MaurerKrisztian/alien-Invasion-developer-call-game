@@ -316,13 +316,10 @@ const distanceY = alienY - turretY;
 const distance = Math.hypot(distanceX, distanceY);
 const timeToTarget = distance / bulletSpeed;
 
-// Predict future position of alien
-const futureAlienY = alienY + alienSpeed * timeToTarget;
 
-// Calculate angle to aim at the predicted position
-const angle = Math.atan2(futureAlienY - turretY, alienX - turretX);
 
-// You can modify this to create your own aiming strategy!
+
+const angle = 5; // replace this with your calculations
 return angle;
 `.trim();
 
@@ -352,8 +349,7 @@ return angle;
     return (
         <div style={{color: '#00ff00', backgroundColor: '#0e0e0e', textAlign: 'center', height: '100vh'}}>
             <h1>Turret Defense Game: Aiming Script Tutorial</h1>
-            <p>To aim your turret at incoming alien ships, you need to calculate the angle between the turret and the
-                alien's position.</p>
+            <p>Below is a radar simulation of an alien attack. To aim your turret at the incoming alien ships, you'll need to calculate the angle between the turret and the alien's position. Once you're ready, hit Deploy to start!</p>
 
             <canvas
                 ref={canvasRef}

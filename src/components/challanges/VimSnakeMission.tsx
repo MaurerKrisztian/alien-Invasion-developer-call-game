@@ -41,7 +41,7 @@ const VimSnakeMission: React.FC = () => {
         <MissionTemplate
             audioUrl="1intro.mp3"
             missionContent={missionContent}
-            challengeComponent={<SnakeGame winningScore={3} onWin={() => {
+            challengeComponent={<SnakeGame winningScore={10} onWin={() => {
                 return navigate('/regexp-mission')
             }}/>}
         />

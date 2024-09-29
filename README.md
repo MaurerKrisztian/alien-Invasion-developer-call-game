@@ -19,7 +19,6 @@ As a developer, you are humanity's last line of defense. Throughout the game, yo
 
 ## How to Run Locally
 
-1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/alien-Invasion-developer-call-game.git
    cd alien-Invasion-developer-call-game
